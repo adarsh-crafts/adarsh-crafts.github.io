@@ -144,21 +144,41 @@
                     </div>
 
                     <!-- Project Item 1 -->
-                    <div class="card p-6 rounded-lg animate-on-scroll">
-                        <h3 class="text-xl font-semibold mb-2">Predicting Student Success with Machine Learning</h3>
-                        <p class="mb-4">A comprehensive data science project to predict student academic outcomes using a UCI dataset. This work involved the full pipeline: data cleaning, extensive exploratory data analysis (EDA) to uncover key trends, and feature engineering. Multiple regression models were trained and evaluated, with Random Forest selected as the best-fit model after addressing overfitting. A key part of this project was navigating the ethical challenge of dropping a statistically significant but potentially biased feature (gender) from the final model.</p>
-                        <div class="flex justify-between items-center">
-                            <div class="text-sm">
-                                <span class="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full mt-0">Python</span>
-                                <span class="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full mt-0">Scikit-learn</span>
-                                <span class="inline-block bg-purple-100 text-purple-800 px-2 py-1 rounded-full mt-0">Data Science</span>
-                                <span class="inline-block bg-red-100 text-red-800 px-2 py-1 rounded-full mt-2">Machine learning</span>
-                                <span class="inline-block bg-fuchsia-100 text-fuchsia-800 px-2 py-1 rounded-full mt-2">EDA</span>
-                                <span class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded-full mt-2">Feature Engineering</span>
+                    <div
+                        class="group card p-6 rounded-lg animate-on-scroll cursor-pointer transition duration-300 hover:shadow-lg"
+                        onclick="this.classList.toggle('expanded')"
+                    >
+                        <!-- Title (always visible) -->
+                        <h3 class="text-xl font-semibold text-black-700 group-hover:underline bg-grey-50 border border-grey-200 rounded-lg px-4 py-2 shadow-sm transition group-hover:shadow-md">
+                            Predicting Student Success with Machine Learning
+                        </h3>
+
+                        <!-- Reveal on hover or expanded -->
+                        <div class="max-h-0 overflow-hidden group-hover:max-h-[800px] expanded:max-h-[800px] transition-all duration-500 ease-in-out mt-4">
+                            <p class="mb-4 text-gray-700 text-sm">
+                                A comprehensive data science project to predict student academic outcomes using a UCI dataset. This work involved the full pipeline: data cleaning, extensive exploratory data analysis (EDA) to uncover key trends, and feature engineering. Multiple regression models were trained and evaluated, with Random Forest selected as the best-fit model after addressing overfitting. A key part of this project was navigating the ethical challenge of dropping a statistically significant but potentially biased feature (gender) from the final model.
+                            </p>
+
+                            <div class="flex flex-wrap justify-between items-center">
+                                <div class="text-sm space-y-2">
+                                    <span class="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Python</span>
+                                    <span class="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full">Scikit-learn</span>
+                                    <span class="inline-block bg-purple-100 text-purple-800 px-2 py-1 rounded-full">Data Science</span>
+                                    <span class="inline-block bg-red-100 text-red-800 px-2 py-1 rounded-full">Machine Learning</span>
+                                    <span class="inline-block bg-fuchsia-100 text-fuchsia-800 px-2 py-1 rounded-full">EDA</span>
+                                    <span class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded-full">Feature Engineering</span>
+                                </div>
+
+                                <a
+                                    href="https://github.com/adarsh-crafts/Predicting-Student-Performance-with-Machine-Learning"
+                                    class="text-blue-600 hover:underline font-semibold text-sm mt-4 sm:mt-0"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                ><i class="fab fa-github mr-1 mt-4"></i> View GitHub</a>
                             </div>
-                            <a href="https://github.com/adarsh-crafts/Predicting-Student-Performance-with-Machine-Learning" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github mr-1"></i> View GitHub</a>
                         </div>
                     </div>
+
                     
                 </div>
             </div>
@@ -202,38 +222,47 @@
 
         <!-- Blog Section -->
         <section id="blog" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6">
-                 <h2 class="text-3xl font-bold section-title text-center animate-on-scroll">Blogs</h2>
-                 <div class="space-y-8 max-w-4xl mx-auto">
-                    
-                    <!-- Blog Item 2 -->
-                    <div class="card p-6 rounded-lg animate-on-scroll">
-                        <p class="text-sm text-gray-500 mb-2">july 20, 2025</p>
-                        <h3 class="text-xl font-semibold mb-2">Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python</h3>
-                        <p class="mb-4">This is a part of my journey to understand large Language Models from first principles, I’ve decided to build a Llama-like model from scratch. This blog series will document the process, breaking down each core component as I implement it.</p>
-                        <a href="https://adarsh-ai.medium.com/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7" class="text-blue-600 hover:underline font-semibold">Read More &rarr;</a>
-                    </div>
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold section-title text-center animate-on-scroll">Blogs</h2>
+            <div class="space-y-8 max-w-4xl mx-auto">
 
-                    <!-- Blog Item 1 -->
-                    <div class="card p-6 rounded-lg animate-on-scroll">
-                        <p class="text-sm text-gray-500 mb-2">August 13, 2024</p>
-                        <h3 class="text-xl font-semibold mb-2">Predicting Student Success: Data Science and Machine Learning Insights</h3>
-                        <p class="mb-4">A detailed article walking through the end-to-end process of a data science project, from exploratory data analysis and feature engineering to model selection and navigating ethical challenges in machine learning.</p>
-                        <a href="https://adarsh-ai.medium.com/predicting-student-success-data-science-and-machine-learning-insights-c669f162e817" class="text-blue-600 hover:underline font-semibold" target="_blank" rel="noopener noreferrer">Read on Medium &rarr;</a>
-                    </div>
+            <!-- Blog Item 2 -->
+            <div class="card p-6 rounded-lg animate-on-scroll">
+                <p class="text-sm text-gray-500 mb-2">july 20, 2025</p>
+                <h3 class="text-xl font-semibold mb-2">Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python</h3>
+                <p class="mb-4">This is a part of my journey to understand large Language Models from first principles, I’ve decided to build a Llama-like model from scratch. This blog series will document the process, breaking down each core component as I implement it.</p>
+                <a href="https://adarsh-ai.medium.com/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7" class="text-blue-600 hover:underline font-semibold">Read More &rarr;</a>
+            </div>
 
-                     <!-- Blog Item 2 -->
-                    <!--
-                    <div class="card p-6 rounded-lg animate-on-scroll">
-                        <p class="text-sm text-gray-500 mb-2">May 1, 2024</p>
-                        <h3 class="text-xl font-semibold mb-2">A Tutorial on Using Project Alpha</h3>
-                        <p class="mb-4">In this post, I walk through the core functionalities of my open-source library, Project Alpha, with code examples and practical tips to get started...</p>
-                        <a href="#" class="text-blue-600 hover:underline font-semibold">Read More &rarr;</a>
-                    </div>
-                    -->
+
+
+            <!-- Blog Item 1 -->
+            <div
+                class="group card p-4 sm:p-6 rounded-lg animate-on-scroll cursor-pointer transition duration-300 hover:shadow-lg"
+                onclick="this.classList.toggle('expanded')"
+            >
+                <!-- Title (always visible) -->
+                <h3 class="text-xl font-semibold text-black-700 group-hover:underline bg-grey-50 border border-grey-200 rounded-lg px-4 py-2 shadow-sm transition group-hover:shadow-md">
+                    Predicting Student Success: Data Science and Machine Learning Insights
+                </h3>
+
+                <!-- Revealed on hover or expanded -->
+                <div class="max-h-0 overflow-hidden group-hover:max-h-[500px] transition-all duration-500 ease-in-out expanded:max-h-[500px] mt-4">
+                    <p class="text-sm text-gray-500 mb-2">August 13, 2024</p>
+                    <p class="mb-3 text-gray-700 text-sm">
+                        A detailed article walking through the end-to-end process of a data science project, from exploratory data analysis and feature engineering to model selection and navigating ethical challenges in machine learning.
+                    </p>
+                    <a
+                        href="https://adarsh-ai.medium.com/predicting-student-success-data-science-and-machine-learning-insights-c669f162e817"
+                        class="text-blue-600 hover:underline font-semibold text-sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Read on Medium &rarr;</a>
                 </div>
             </div>
+        </div>
         </section>
+
 
 
         <!-- Contact Section -->
