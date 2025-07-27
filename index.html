@@ -44,6 +44,27 @@
             transform: translateY(0);
         }
     </style>
+    <style>
+    .blog-details-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .group:hover .blog-details-wrapper {
+        max-height: 400px; /* or adjust based on content */
+    }
+
+    .blog-details {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .group:hover .blog-details {
+        opacity: 1;
+    }
+    </style>
+
 </head>
 <body>
 
@@ -227,55 +248,84 @@
             <h2 class="text-3xl font-bold section-title text-center mb-10 animate-on-scroll">Blogs</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Blog Card -->
+
+            <!-- Blog Card 1 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:shadow-lg hover:scale-[1.01] group">
-                <img src="assets/blog-thumbnail/Blog2.jpg" alt="BPE Blog" class="w-full h-40 object-cover">
+                <img src="assets\blog-thumbnail\Blog3.jpg" alt="Student Blog" class="w-full h-40 object-cover">
                 <div class="p-4">
-                <p class="text-xs text-gray-500 mb-1">July 20, 2025</p>
-                <h3 class="text-xl font-semibold mb-2">Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python</h3>
-                <div class="flex items-center flex-wrap gap-1 mb-2">
-                <!--
-                       <a href="https://adarsh-ai.medium.com" target="_blank" class="text-[10px] bg-gray-100 text-gray-700 px-2 py-0.5 rounded">📝 Medium</a>
-                    --> 
-                       <a href="https://medium.com/@adarsh-ai/list/understanding-large-language-models-llms-41af55633be9" class="text-[10px] bg-blue-100 text-blue-700 px-2 py-0.5 rounded">LLM Series</a>
+                <h3 class="text-xl font-semibold mb-2">A Beginner's Guide to Multi-Head Self-Attention in LLMs</h3>
+                <div class="blog-details-wrapper">
+                    <div class="blog-details">
+                    <p class="text-xs text-gray-500 mb-1">August 26, 2025</p>
+                    <div class="flex items-center flex-wrap gap-1 mb-2">
+                        <a href="https://medium.com/@adarsh-ai/list/understanding-large-language-models-llms-41af55633be9" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-blue-100 text-blue-700 px-2 py-0.5 rounded">LLM Series</a>
+                        <a href="#" class="text-[10px] bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Transformers</a>
+                        <a href="#" class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded">Linear Algebra</a>
+                    </div>
+                    <div class="text-sm text-gray-700 mb-2">
+                        How do models like Llama and GPT understand context so effectively? The answer lies in multi-head self-attention. In this post, I provide a step-by-step breakdown of this foundational technology, translating complex theory into intuitive concepts.
+                    </div>
+                    <a href="https://medium.com/@adarsh-ai/a-beginners-guide-to-multi-head-self-attention-in-llms-1a4ea8be6fb2" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-600 font-semibold hover:underline text-sm">
+                        Read on Medium →
+                    </a>
+                    </div>
                 </div>
-                <div class="overflow-hidden max-h-12 group-hover:max-h-40 transition-all duration-300 ease-in-out text-sm text-gray-700">
-                    This is part of my journey to understand large language models from first principles. I’m building a LLaMA-like model from scratch, documenting each component in this blog series.
-                </div>
-                <a href="https://adarsh-ai.medium.com/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7" target="_blank" class="inline-block text-blue-600 font-semibold hover:underline text-sm mt-2">
-                    Read on Medium →
-                </a>
                 </div>
             </div>
 
             <!-- Blog Card 2 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:shadow-lg hover:scale-[1.01] group">
-                <img src="assets\blog-thumbnail\Blog1.jpg" alt="Student Blog" class="w-full h-40 object-cover">
+                <img src="assets/blog-thumbnail/Blog2.jpg" alt="BPE Blog" class="w-full h-40 object-cover">
                 <div class="p-4">
-                <p class="text-xs text-gray-500 mb-1">August 13, 2024</p>
+                <h3 class="text-xl font-semibold mb-2">Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python</h3>
+                <div class="blog-details-wrapper">
+                    <div class="blog-details">
+                    <p class="text-xs text-gray-500 mb-1">July 20, 2025</p>
+                    <div class="flex items-center flex-wrap gap-1 mb-2">
+                        <a href="https://medium.com/@adarsh-ai/list/understanding-large-language-models-llms-41af55633be9" target="_blank" rel="noopener noreferrer" class="text-[10px] bg-blue-100 text-blue-700 px-2 py-0.5 rounded">LLM Series</a>
+                    </div>
+                    <div class="text-sm text-gray-700 mb-2">
+                        This is part of my journey to understand large language models from first principles. I’m building a LLaMA-like model from scratch, documenting each component in this blog series.
+                    </div>
+                    <a href="https://adarsh-ai.medium.com/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-600 font-semibold hover:underline text-sm">
+                        Read on Medium →
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:shadow-lg hover:scale-[1.01] group">
+                <img src="assets/blog-thumbnail/Blog1.jpg" alt="Student Blog" class="w-full h-40 object-cover">
+                <div class="p-4">
                 <h3 class="text-xl font-semibold mb-2">Predicting Student Success: Data Science and Machine Learning Insights</h3>
-                <div class="flex items-center flex-wrap gap-1 mb-2">
-                    <a href="#" class="text-[10px] bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">End-to-End Project</a>
-                    <a href="#" class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded">Applied Data Science</a>
+                <div class="blog-details-wrapper">
+                    <div class="blog-details">
+                    <p class="text-xs text-gray-500 mb-1">August 13, 2024</p>
+                    <div class="flex items-center flex-wrap gap-1 mb-2">
+                        <a href="#" class="text-[10px] bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">End-to-End Project</a>
+                        <a href="#" class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded">Applied Data Science</a>
+                    </div>
+                    <div class="text-sm text-gray-700 mb-2">
+                        A detailed article walking through a real-world data science project: from EDA and feature engineering to model selection and ethical considerations.
+                    </div>
+                    <a href="https://adarsh-ai.medium.com/predicting-student-success-data-science-and-machine-learning-insights-c669f162e817" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-600 font-semibold hover:underline text-sm">
+                        Read on Medium →
+                    </a>
+                    </div>
                 </div>
-                <div class="overflow-hidden max-h-12 group-hover:max-h-40 transition-all duration-300 ease-in-out text-sm text-gray-700">
-                    A detailed article walking through a real-world data science project: from EDA and feature engineering to model selection and ethical considerations.
-                </div>
-                <a href="https://adarsh-ai.medium.com/predicting-student-success-data-science-and-machine-learning-insights-c669f162e817" target="_blank" class="inline-block text-blue-600 font-semibold hover:underline text-sm mt-2">
-                    Read on Medium →
-                </a>
                 </div>
             </div>
             </div>
 
             <!-- See More Button -->
             <div class="mt-8 text-center">
-            <a href="https://medium.com/@adarsh-ai" target="_blank"
+            <a href="https://medium.com/@adarsh-ai" target="_blank" rel="noopener noreferrer"
                 class="inline-block bg-black text-white text-sm font-semibold px-6 py-2 rounded-lg hover:bg-grey transition duration-300">
                 See More Blogs →
             </a>
             </div>
-
         </div>
         </section>
 
