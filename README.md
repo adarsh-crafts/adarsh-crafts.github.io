@@ -1,14 +1,13 @@
 # Adarsh Pritam
 
- Aspiring PhD in AI & Healthcare
+AI & Machine Learning Enthusiast | Focused on Healthcare Applications | Aspiring PhD in AI & Healthcare
 
 [Email](mailto:nadarsh337@gmail.com) / [Medium](https://medium.com/@adarsh-ai) / [LinkedIn](https://www.linkedin.com/in/adarshn-256455279/) / [GitHub](https://github.com/adarsh-crafts)  / [Google Scholar]()
 
 
 ## Research experience
 
-**Machine Learning Research Intern** @ [ I2CS Research Group, IIITK](https://i2cs.iiitkottayam.ac.in/) _(May 2025 - Present)_
-
+**Machine Learning Research Intern** @ [ I2CS Research Group, IIITK](https://i2cs.iiitkottayam.ac.in/) _(May 2025 - Present)_  
 Carried out supervised research in the field of **Vision-Language Models**, focusing on enhancing multimodal alignment.
 
 - **Engineered** and trained a custom **Vision-Language Model (VLM)** by integrating a fine-tuned CLIP vision encoder with a 7B-parameter LLM.  
@@ -17,11 +16,23 @@ Carried out supervised research in the field of **Vision-Language Models**, focu
 
 - **Benchmarked** the custom VLM's performance against established vision-language baselines on key metrics. 
 
+- **Authored** key sections of the research manuscript, including the literature review, architectural description of the models, and comparative performance analysis.
+
+**A Comparative Analysis of Generative Models for Medical Image Augmentation** _(Ongoing)_
+
+- **Spearheaded** an independent research project to investigate the efficacy of modern generative models for augmenting dermatological datasets and improving diagnostic classifier performance.
+
+- **Engineered** a complete deep learning pipeline in PyTorch, encompassing data preprocessing, on-the-fly augmentation, and custom DataLoaders for the ISIC 2020 skin lesion dataset.
+
+- **Implementing** and **benchmarking** state-of-the-art generative architectures, including StyleGAN-based models and Denoising Diffusion Probabilistic Models (DDPMs), to synthesize high-fidelity 256x256 medical images.
+
+- **Evaluating** the quality and clinical utility of synthetic images through both quantitative metrics (e.g., FID) and the performance improvement of a downstream ResNet-based classifier.
+
 
 ## Publications
 
 **An End-to-End Sign Language Translation Pipeline from Static Gestures to English Using T5**  
-_**N A Adarsh Pritam**, Asha Kurian. Proceedings of the International Conference on Emerging Technologies in Computing and Communication (ETCC 2025)_ [PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11108641) [Publication](https://ieeexplore.ieee.org/document/11108641)
+_N A Adarsh Pritam, Asha Kurian. Proceedings of the International Conference on Emerging Technologies in Computing and Communication (ETCC 2025)_ [PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11108641) [Publication](https://ieeexplore.ieee.org/document/11108641)
 
 - Proposed an **end-to-end ASL-to-English translation system** that integrates vision-based gesture recognition (MediaPipe, Teachable Machine) with a fine-tuned FLAN-T5 model for natural language generation.
 
@@ -41,7 +52,7 @@ _(Ongoing)_
 
 - Applied **QLoRA**-based fine-tuning for **parameter-efficient adaptation**, demonstrating potential for personalized dialogue systems and low-resource model customization.  
 
-**Reimplementing a LLaMA-style Transformer from Scratch in PyTorch** 
+**Reimplemented a LLaMA-style Transformer from Scratch in PyTorch** 
 _[GitHub](https://github.com/adarsh-crafts/llama-llm-from-scratch)_
 
 - Developed an **educational reimplementation of a modern LLaMA-inspired large language model**, constructed entirely from first principles in PyTorch.
@@ -74,7 +85,7 @@ For a complete overview of my open source contributions, check [this GitHub sear
 - Improved code documentation by adding comprehensive docstrings to utility and helper functions _**(OpenAI)**_
 - Improved an example script by removing dead code to enhance long-term code health and maintainability _**(OpenAI)**_
 - Refactored a utility function for clarity, improving code readability and long-term maintainability _**(OpenAI)**_
-- Fixed grammar in multiple filesResolved UnicodeDecodeError in txt file reader by specifying encoding for cross-platform compatibility _**(FreeCodeCamp)**_
+- Resolved UnicodeDecodeError in a txt file-reader by specifying encoding for cross-platform compatibility _**(FreeCodeCamp)**_
 - Fixed typo in function docstring to improve clarity _**(FreeCodeCamp)**_
 
 
