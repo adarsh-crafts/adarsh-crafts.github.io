@@ -81,12 +81,12 @@ For a complete overview of my open source contributions, check [this GitHub sear
 
 ### 2025
 
-- Improved the model's positional embedding layer by refactoring duplicated logic to enhance code clarity and robustness _**(OpenAI)**_
-- Improved code documentation by adding comprehensive docstrings to utility and helper functions _**(OpenAI)**_
-- Improved an example script by removing dead code to enhance long-term code health and maintainability _**(OpenAI)**_
-- Refactored a utility function for clarity, improving code readability and long-term maintainability _**(OpenAI)**_
-- Resolved UnicodeDecodeError in a txt file-reader by specifying encoding for cross-platform compatibility _**(FreeCodeCamp)**_
-- Fixed typo in function docstring to improve clarity _**(FreeCodeCamp)**_
+- Improved the model's positional embedding layer by refactoring duplicated logic to enhance code clarity and robustness _**(OpenAI)**_ <span style="color:gold">[approved]</span> 
+- Improved code documentation by adding comprehensive docstrings to utility and helper functions _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>
+- Improved an example script by removing dead code to enhance long-term code health and maintainability _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>
+- Refactored a utility function for clarity, improving code readability and long-term maintainability _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>
+- Resolved UnicodeDecodeError in a txt file-reader by specifying encoding for cross-platform compatibility _**(FreeCodeCamp)**_ <span style="color:#90EE90">[merged]</span>
+- Fixed typo in function docstring to improve clarity _**(FreeCodeCamp)**_ <span style="color:#90EE90">[merged]</span>
 
 
 ## Certifications
