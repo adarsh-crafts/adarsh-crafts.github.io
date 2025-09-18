@@ -1,6 +1,11 @@
-# Adarsh Pritam
+## Bio
 
-Machine Learning Researcher | Focused on Healthcare Applications | Aspiring PhD in AI & Healthcare
+My long-term research goal is to advance **trustworthy machine learning methods for healthcare**. I am particularly interested in machine learning, computer vision, natural language processing, and generative models, with applications to **medical imaging and clinical decision support**.
+
+[I am seeking PhD opportunities in Machine Learning and Healthcare applications starting Fall 2026.]() If you are interested in my research, collaborations, or potential opportunities, feel free to contact me. 
+
+
+## Contact
 
 [Email](mailto:nadarsh337@gmail.com) / [Medium](https://medium.com/@adarsh-ai) / [LinkedIn](https://www.linkedin.com/in/adarshn-256455279/) / [GitHub](https://github.com/adarsh-crafts)  / [Google Scholar](https://scholar.google.com/citations?user=Sm8_hWgAAAAJ&hl=en)
 
@@ -20,9 +25,7 @@ Carried out supervised research in the field of **Vision-Language Models**, focu
 
 **A Comparative Analysis of Generative Models for Medical Image Augmentation** _(Ongoing)_
 
-- **Spearheaded** an independent research project to investigate the efficacy of modern generative models for augmenting dermatological datasets and improving diagnostic classifier performance.
-
-- **Engineered** a complete deep learning pipeline in PyTorch, encompassing data preprocessing, on-the-fly augmentation, and custom DataLoaders for the ISIC 2020 skin lesion dataset.
+- **Leading** an independent research project to investigate the performance of modern generative models and the impact of pre-processing for augmenting dermatological datasets and improving diagnostic classifier performance.
 
 - **Implementing** and **benchmarking** state-of-the-art generative architectures, including StyleGAN-based models and Denoising Diffusion Probabilistic Models (DDPMs), to synthesize high-fidelity 256x256 medical images.
 
@@ -32,7 +35,7 @@ Carried out supervised research in the field of **Vision-Language Models**, focu
 ## Publications
 
 **An End-to-End Sign Language Translation Pipeline from Static Gestures to English Using T5**  
-_N A Adarsh Pritam, Asha Kurian. Proceedings of the International Conference on Emerging Technologies in Computing and Communication (ETCC 2025)_ [PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11108641) [Publication](https://ieeexplore.ieee.org/document/11108641)
+_N A Adarsh Pritam, Asha Kurian. Proceedings of the International Conference on Emerging Technologies in Computing and Communication (ETCC 2025)_ [[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11108641)] [[Publication](https://ieeexplore.ieee.org/document/11108641)]
 
 - Proposed an **end-to-end ASL-to-English translation system** that integrates vision-based gesture recognition (MediaPipe, Teachable Machine) with a fine-tuned FLAN-T5 model for natural language generation.
 
@@ -43,8 +46,8 @@ _N A Adarsh Pritam, Asha Kurian. Proceedings of the International Conference on 
 
 ## Projects
 
-**Built-from-Scratch Personalized Conversational-AI to Mimic Communication Style via Personal Chat Logs** _[GitHub](https://github.com/adarsh-crafts/personalized-conversational-ai)_  
-_(Ongoing)_
+**Built-from-Scratch Personalized Conversational-AI to Mimic Communication Style via Personal Chat Logs** [_[GitHub](https://github.com/adarsh-crafts/personalized-conversational-ai)_]  
+_(Ongoing)_  
 
 - Designed an end-to-end custom language model to **emulate individual communication styles** using personal chat logs.
 
@@ -53,7 +56,7 @@ _(Ongoing)_
 - Applied **QLoRA**-based fine-tuning for **parameter-efficient adaptation**, demonstrating potential for personalized dialogue systems and low-resource model customization.  
 
 **Reimplemented a LLaMA-style Transformer from Scratch in PyTorch** 
-_[GitHub](https://github.com/adarsh-crafts/llama-llm-from-scratch)_
+[_[GitHub](https://github.com/adarsh-crafts/llama-llm-from-scratch)_]
 
 - Developed an **educational reimplementation of a modern LLaMA-inspired large language model**, constructed entirely from first principles in PyTorch.
 
@@ -62,17 +65,13 @@ _[GitHub](https://github.com/adarsh-crafts/llama-llm-from-scratch)_
 _[See more projects on GitHub](https://github.com/adarsh-crafts)_
 
 
-## My Blogs
+## My Blogs [[Full List](https://medium.com/@adarsh-ai)]
 
-**A Beginner's Guide to Multi-Head Self-Attention in LLMs**  _[read here](https://medium.com/@adarsh-ai/a-beginners-guide-to-multi-head-self-attention-in-llms-1a4ea8be6fb2)_
-
+[**A Beginner's Guide to Multi-Head Self-Attention in LLMs**](https://medium.com/@adarsh-ai/a-beginners-guide-to-multi-head-self-attention-in-llms-1a4ea8be6fb2)_  
 How do models like Llama and GPT understand context so effectively? The answer lies in multi-head self-attention. In this post, I provide a step-by-step breakdown of this foundational technology, translating complex theory into intuitive concepts.  
 
-**Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python** _[read here](https://medium.com/@adarsh-ai/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7)_
-
+[**Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python**](https://medium.com/@adarsh-ai/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7)  
 This is part of my journey to understand large language models from first principles. I’m building a LLaMA-like model from scratch, documenting each component in this blog series.
-
-_[See more blogs on Medium](https://medium.com/@adarsh-ai)_
 
 
 ## Open Source contributions
@@ -81,11 +80,16 @@ For a complete overview of my open source contributions, check [this GitHub sear
 
 ### 2025
 
-- Improved the model's positional embedding layer by refactoring duplicated logic to enhance code clarity and robustness _**(OpenAI)**_ <span style="color:gold">[approved]</span> 
-- Improved code documentation by adding comprehensive docstrings to utility and helper functions _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>
-- Improved an example script by removing dead code to enhance long-term code health and maintainability _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>
-- Refactored a utility function for clarity, improving code readability and long-term maintainability _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>
-- Resolved UnicodeDecodeError in a txt file-reader by specifying encoding for cross-platform compatibility _**(FreeCodeCamp)**_ <span style="color:#90EE90">[merged]</span>
+- Improved the model's positional embedding layer by refactoring duplicated logic to enhance code clarity and robustness _**(OpenAI)**_ <span style="color:gold">[approved]</span>  
+
+- Improved code documentation by adding comprehensive docstrings to utility and helper functions _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>  
+
+- Improved an example script by removing dead code to enhance long-term code health and maintainability _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>  
+
+- Refactored a utility function for clarity, improving code readability and long-term maintainability _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>  
+
+- Resolved UnicodeDecodeError in a txt file-reader by specifying encoding for cross-platform compatibility _**(FreeCodeCamp)**_ <span style="color:#90EE90">[merged]</span>  
+
 - Fixed typo in function docstring to improve clarity _**(FreeCodeCamp)**_ <span style="color:#90EE90">[merged]</span>
 
 
