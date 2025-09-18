@@ -2,7 +2,7 @@
 
 My long-term research goal is to advance **trustworthy machine learning methods for healthcare**. I am particularly interested in machine learning, computer vision, natural language processing, and generative models, with applications to **medical imaging and clinical decision support**.
 
-[I am seeking PhD opportunities in Machine Learning and Healthcare applications starting Fall 2026.]() If you are interested in my research, collaborations, or potential opportunities, feel free to contact me. 
+<span style="color:#f54275">[I am seeking PhD opportunities in Machine Learning and Healthcare applications starting Fall 2026.]</span> If you are interested in my research, collaborations, or potential opportunities, feel free to contact me. 
 
 
 ## Contact
