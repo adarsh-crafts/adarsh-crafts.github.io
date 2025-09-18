@@ -1,6 +1,4 @@
-# Adarsh Pritam
-
-Machine Learning Researcher | Focused on Healthcare Applications | Aspiring PhD in AI & Healthcare
+My long-term research goal is to advance **trustworthy machine learning methods for healthcare**. I am particularly interested in computer vision, natural language processing, and generative models, with applications to **medical imaging and clinical decision support**.
 
 [Email](mailto:nadarsh337@gmail.com) / [Medium](https://medium.com/@adarsh-ai) / [LinkedIn](https://www.linkedin.com/in/adarshn-256455279/) / [GitHub](https://github.com/adarsh-crafts)  / [Google Scholar](https://scholar.google.com/citations?user=Sm8_hWgAAAAJ&hl=en)
 
@@ -20,9 +18,7 @@ Carried out supervised research in the field of **Vision-Language Models**, focu
 
 **A Comparative Analysis of Generative Models for Medical Image Augmentation** _(Ongoing)_
 
-- **Spearheaded** an independent research project to investigate the efficacy of modern generative models for augmenting dermatological datasets and improving diagnostic classifier performance.
-
-- **Engineered** a complete deep learning pipeline in PyTorch, encompassing data preprocessing, on-the-fly augmentation, and custom DataLoaders for the ISIC 2020 skin lesion dataset.
+- **Leading** an independent research project to investigate the performance of modern generative models and the impact of pre-processing for augmenting dermatological datasets and improving diagnostic classifier performance.
 
 - **Implementing** and **benchmarking** state-of-the-art generative architectures, including StyleGAN-based models and Denoising Diffusion Probabilistic Models (DDPMs), to synthesize high-fidelity 256x256 medical images.
 
@@ -73,6 +69,22 @@ How do models like Llama and GPT understand context so effectively? The answer l
 This is part of my journey to understand large language models from first principles. I’m building a LLaMA-like model from scratch, documenting each component in this blog series.
 
 _[See more blogs on Medium](https://medium.com/@adarsh-ai)_
+
+
+<div style="display: flex; align-items: center;">
+
+  <div style="flex: 1;">
+    <img src="images\BPE.jpg" width="256">
+  </div>
+
+  <div style="flex: 2; padding-left: 15px;">
+    <b>Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python</b><br>
+    This is part of my journey to understand large language models from first principles. I’m building a LLaMA-like model from scratch, documenting each component in this blog series. <br>
+    <i>July 2025</i>, <a href="https://medium.com/@adarsh-ai/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7">read here</a>
+  </div>
+
+</div>
+
 
 
 ## Open Source contributions
