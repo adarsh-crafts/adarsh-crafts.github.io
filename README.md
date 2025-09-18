@@ -2,7 +2,7 @@
 
 My long-term research goal is to advance **trustworthy machine learning methods for healthcare**. I am particularly interested in machine learning, computer vision, natural language processing, and generative models, with applications to **medical imaging and clinical decision support**.
 
-<span style="color:#f54275">[I am seeking PhD opportunities in Machine Learning and Healthcare applications starting Fall 2026.]</span> If you are interested in my research, collaborations, or potential opportunities, feel free to contact me. 
+<span style="color:#f54275">**I am seeking PhD opportunities in Machine Learning and Healthcare applications starting Fall 2026.**</span> If you are interested in my research, collaborations, or potential opportunities, feel free to contact me. 
 
 
 ## Contact
@@ -44,7 +44,7 @@ _N A Adarsh Pritam, Asha Kurian. Proceedings of the International Conference on 
 - Delivered a **lightweight**, **modular prototype** suitable for deployment on consumer hardware, highlighting its potential as an **assistive communication** tool in education and healthcare settings. 
 
 
-## Projects
+## Projects [[Full List](https://github.com/adarsh-crafts)]
 
 **Built-from-Scratch Personalized Conversational-AI to Mimic Communication Style via Personal Chat Logs** [_[GitHub](https://github.com/adarsh-crafts/personalized-conversational-ai)_]  
 _(Ongoing)_  
@@ -62,15 +62,13 @@ _(Ongoing)_
 
 - **Implemented** and analyzed key components of transformer architecture, including **multi-head attention**, **grouped-query attention (GQA)**, and **rotary positional embeddings (RoPE)**.
 
-_[See more projects on GitHub](https://github.com/adarsh-crafts)_
-
 
 ## My Blogs [[Full List](https://medium.com/@adarsh-ai)]
 
-[**A Beginner's Guide to Multi-Head Self-Attention in LLMs**](https://medium.com/@adarsh-ai/a-beginners-guide-to-multi-head-self-attention-in-llms-1a4ea8be6fb2)_  
+#### [A Beginner's Guide to Multi-Head Self-Attention in LLMs](https://medium.com/@adarsh-ai/a-beginners-guide-to-multi-head-self-attention-in-llms-1a4ea8be6fb2)  
 How do models like Llama and GPT understand context so effectively? The answer lies in multi-head self-attention. In this post, I provide a step-by-step breakdown of this foundational technology, translating complex theory into intuitive concepts.  
 
-[**Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python**](https://medium.com/@adarsh-ai/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7)  
+#### [Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python](https://medium.com/@adarsh-ai/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7)  
 This is part of my journey to understand large language models from first principles. I’m building a LLaMA-like model from scratch, documenting each component in this blog series.
 
 
@@ -82,15 +80,15 @@ For a complete overview of my open source contributions, check [this GitHub sear
 
 - Improved the model's positional embedding layer by refactoring duplicated logic to enhance code clarity and robustness _**(OpenAI)**_ <span style="color:gold">[approved]</span>  
 
-- Improved code documentation by adding comprehensive docstrings to utility and helper functions _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>  
+- Improved code documentation by adding comprehensive docstrings to utility and helper functions _**(OpenAI)**_ <span style="color:#6FAB6F">[merged]</span>  
 
-- Improved an example script by removing dead code to enhance long-term code health and maintainability _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>  
+- Improved an example script by removing dead code to enhance long-term code health and maintainability _**(OpenAI)**_ <span style="color:#6FAB6F">[merged]</span>  
 
-- Refactored a utility function for clarity, improving code readability and long-term maintainability _**(OpenAI)**_ <span style="color:#90EE90">[merged]</span>  
+- Refactored a utility function for clarity, improving code readability and long-term maintainability _**(OpenAI)**_ <span style="color:#6FAB6F">[merged]</span>  
 
-- Resolved UnicodeDecodeError in a txt file-reader by specifying encoding for cross-platform compatibility _**(FreeCodeCamp)**_ <span style="color:#90EE90">[merged]</span>  
+- Resolved UnicodeDecodeError in a txt file-reader by specifying encoding for cross-platform compatibility _**(FreeCodeCamp)**_ <span style="color:#6FAB6F">[merged]</span>  
 
-- Fixed typo in function docstring to improve clarity _**(FreeCodeCamp)**_ <span style="color:#90EE90">[merged]</span>
+- Fixed typo in function docstring to improve clarity _**(FreeCodeCamp)**_ <span style="color:#6FAB6F">[merged]</span>
 
 
 ## Certifications
