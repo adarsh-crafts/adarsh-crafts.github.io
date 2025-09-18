@@ -64,27 +64,19 @@ _[See more projects on GitHub](https://github.com/adarsh-crafts)_
 
 How do models like Llama and GPT understand context so effectively? The answer lies in multi-head self-attention. In this post, I provide a step-by-step breakdown of this foundational technology, translating complex theory into intuitive concepts.  
 
-**Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python** _[read here](https://medium.com/@adarsh-ai/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7)_
+<div style="display: flex; align-items: center; flex-wrap: wrap;">
 
-This is part of my journey to understand large language models from first principles. I’m building a LLaMA-like model from scratch, documenting each component in this blog series.
-
-_[See more blogs on Medium](https://medium.com/@adarsh-ai)_
-
-
-<div style="display: flex; align-items: center;">
-
-  <div style="flex: 1;">
-    <img src="images\BPE.jpg" width="256">
+  <div style="flex: 1; min-width: 150px; text-align: center;">
+    <img src="images/BPE.jpg" style="max-width: 100%; height: auto;">
   </div>
 
-  <div style="flex: 2; padding-left: 15px;">
+  <div style="flex: 2; padding: 10px;">
     <b>Build a Byte-Pair Encoding (BPE) Tokenizer from Scratch in Python</b><br>
     This is part of my journey to understand large language models from first principles. I’m building a LLaMA-like model from scratch, documenting each component in this blog series. <br>
     <i>July 2025</i>, <a href="https://medium.com/@adarsh-ai/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7">read here</a>
   </div>
 
-</div>
-
+</div>  
 
 
 ## Open Source contributions
@@ -112,3 +104,16 @@ For a complete overview of my open source contributions, check [this GitHub sear
 - **Google Business Intelligence Specialization** - _Google_
 
 - **Google Data Analytics Specialization** - _Google_
+
+
+<style>
+  @media (max-width: 600px) {
+    div[style*="display: flex"] {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    div[style*="padding: 10px"] {
+      padding-left: 0 !important;
+    }
+  }
+</style>
