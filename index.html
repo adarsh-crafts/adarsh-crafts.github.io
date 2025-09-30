@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Adarsh Pritam</title>
+  <link rel="icon" href="https://em-content.zobj.net/thumbs/120/apple/354/technologist-light-skin-tone_1f9d1-1f3fb-200d-1f4bb.png" type="image/x-icon">
+  <style>
+    .gallery-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .google-scholar-logo-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .scholar-logo {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-item {
+        text-align: center;
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .gallery-title {
+        margin: 10px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+    .google-scholar-logo-container {
+    text-align: center; /* Center the logo horizontally */
+    margin-top: 20px; /* Add some spacing above the logo */
+}
+
+.scholar-logo {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+    
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    p {
+      line-height: 1.6;
+    }
+    
+    .tab-container {
+      margin-bottom: 20px;
+    }
+    
+    .tab-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .tab-link {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      margin: 5px;
+    }
+    
+    .tab-link.active {
+      background-color: #666;
+    }
+    
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    .affiliation-placeholder {
+      text-align: center;
+    }
+    
+    .row-section {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
+    .row-section:hover {
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    
+    .row-section img {
+      max-width: 100%;
+      max-height: 350px;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .row-section p {
+      text-align: justify;
+    }
+    
+    .paper-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .paper-authors {
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    .paper-abstract {
+      line-height: 1.4;
+    }
+    
+    .google-scholar-link {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #337ab7;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 3px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+    
+    /* Responsive Styles */
+    @media only screen and (max-width: 600px) {
+      main {
+        padding: 10px;
+      }
+      
+      .tab-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .tab-link {
+        margin: 5px 0;
+      }
+      
+      .affiliation-placeholder {
+        margin-top: 20px;
+      }
+    }
+    
+    .popup {
+      display: none;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+    }
+    
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9998;
+    }
+    
+    .popup-content {
+      margin-bottom: 20px;
+    }
+    
+    .popup-title {
+      font-weight: normal;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+  .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-box {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-box img {
+  max-width: 100%;
+  max-height: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-box p {
+  text-align: justify;
+}
+
+.project-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.project-description {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.publications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .publication-box {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .publication-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .publication-box p {
+    text-align: justify;
+  }
+
+  .publication-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .publication-authors {
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .publication-abstract {
+    line-height: 1.4;
+  }
+ 
+  /* Add your CSS styles here */
+  .tab-content {
+      margin: 20px;
+    }
+    
+
+    
+    .experience-item {
+      margin-bottom: 20px;
+    }
+    
+    .experience-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .experience-duration {
+      color: #999;
+      margin-bottom: 5px;
+    }
+    
+    .experience-description {
+      margin-top: 5px;
+    }
+ /* Add your CSS styles here */
+ .tab-content {
+      margin: 20px;
+    }
+    
+
+    
+    .experience-item {
+      border: 2px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .experience-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .experience-duration {
+      color: #999;
+      margin-bottom: 5px;
+    }
+    
+    .experience-description {
+      margin-top: 5px;
+    }
+    .experience-item:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .education-section {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.education-section h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+.education-section p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.education-section:hover {
+  background-color: #eaeaea;
+}
+.education-section .read-more {
+    display: none;
+  }
+
+  #contact {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+#contact h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background-color: #fff;
+  border: 2px solid #777;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-link:hover {
+  color: #999;
+  background-color: #f2f2f2;
+}
+.article-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+.article-section img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.article-content {
+  flex: 1;
+}
+
+.article-title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.article-date {
+  font-size: 14px;
+  color: #777;
+}
+/* Add this CSS to your existing style section */
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-height: 400px; /* Adjust the max height as needed */
+  overflow: hidden;
+}
+
+.carousel img {
+  display: none;
+  /* width: 100%; */
+  height: auto;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #666;
+}
+
+
+
+  </style>
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabContent, tabLink;
+      
+      tabContent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+      
+      tabLink = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tabLink.length; i++) {
+        tabLink[i].className = tabLink[i].className.replace(" active", "");
+      }
+      
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    function openLinkInNewTab(url) {
+      var isSection = ["about", "publications", "projects", "affiliations", "experience", "contact"].includes(url);
+      if (!isSection) {
+        window.open(url, "_blank");
+      }
+    }
+
+    function openPublicationPopup(title, authors, abstract) {
+      var popup = document.getElementById("publicationPopup");
+      var overlay = document.getElementById("publicationOverlay");
+      var popupTitle = document.getElementById("popupTitle");
+      var popupAuthors = document.getElementById("popupAuthors");
+      var popupAbstract = document.getElementById("popupAbstract");
+
+      popupTitle.textContent = title;
+      popupAuthors.textContent = authors;
+      popupAbstract.textContent = abstract;
+
+      popup.style.display = "block";
+      overlay.style.display = "block";
+    }
+
+    function closePublicationPopup() {
+      var popup = document.getElementById("publicationPopup");
+      var overlay = document.getElementById("publicationOverlay");
+
+      popup.style.display = "none";
+      overlay.style.display = "none";
+    }
+      // JavaScript code to toggle "read more" section
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleButtons = document.querySelectorAll(".toggle-read-more");
+    toggleButtons.forEach(function(button) {
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        const readMoreSection = this.previousElementSibling;
+        readMoreSection.style.display = readMoreSection.style.display === "none" ? "block" : "none";
+        this.textContent = this.textContent === "Read More" ? "Read Less" : "Read More";
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector(".carousel");
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+    let currentIndex = 0;
+    
+    const images = carousel.querySelectorAll("img");
+    const imageCount = images.length;
+    
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.style.display = i === index ? "block" : "none";
+      });
+    }
+    
+    function goToPreviousImage() {
+      currentIndex = (currentIndex - 1 + imageCount) % imageCount;
+      showImage(currentIndex);
+    }
+    
+    function goToNextImage() {
+      currentIndex = (currentIndex + 1) % imageCount;
+      showImage(currentIndex);
+    }
+    
+    prevButton.addEventListener("click", goToPreviousImage);
+    nextButton.addEventListener("click", goToNextImage);
+    
+    // Initial setup
+    showImage(currentIndex);
+    
+    setInterval(goToNextImage, 5000); // Switch images every 2 seconds
+  });
+  </script>
+    <!-- Google Analytics, Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XH2D1GVZH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5XH2D1GVZH');
+    </script>
+</head>
+<body>
+  <header>
+    <h1>N A Adarsh Pritam</h1>
+    <h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/800px-Flag_of_India.svg.png" alt="Flag of India" width="50" height="30" style="border: 1px solid #ccc; border-radius: 8px;" >
+
+    </h1>
+  </header>
+  
+  <main>
+    <div class="tab-container">
+      <div class="tab-links">
+        <a href="#" class="tab-link active" onclick="openTab(event, 'about')">About</a>
+        <a href="#" class="tab-link" onclick="openTab(event, 'publications')">Publications & Blogs</a>
+        <a href="#" class="tab-link" onclick="openTab(event, 'projects')">Projects</a>
+        <a href="#" class="tab-link" onclick="openTab(event, 'experience')">Experience</a>
+        <a href="#" class="tab-link" onclick="openTab(event, 'education')">Education</a>
+        <a href="#" class="tab-link" onclick="openTab(event, 'contact')">Contact</a>
+      </div>
+      
+      <div id="about" class="tab-content active">
+        <h2>About Me</h2>
+        <div class="row-section">
+          <!-- <img src="https://raw.githubusercontent.com/s4nyam/s4nyam.github.io/main/mine.JPG" alt="About Me Image"> -->
+          <!-- <div class="carousel-container">
+            <div class="carousel">
+                            
+              <img src="https://ia601308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5929.JPEG">
+              <img src="https://ia801308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5941.JPEG">
+              <img src="https://ia601308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5945.JPEG">
+              <img src="https://ia801308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5948.JPEG">
+              <img src="https://ia801308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5949.JPEG">
+              <img src="https://ia801308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5950.JPEG">
+              <img src="https://ia601308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5963.JPEG">
+              <img src="https://ia601308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5972.JPEG">
+              <img src="https://ia801308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5973.JPEG">
+              <img src="https://ia801308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5975.JPEG">
+              <img src="https://ia601308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5976.JPEG">
+              <img src="https://ia801308.us.archive.org/19/items/molsbjerg/molsbjerg/IMG_5983.JPEG">
+               <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/00E5A1CB-AE57-4398-B177-459969359F9E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/05A755B0-B093-4DB2-AE02-B66B1AAA59DA_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/07B58A24-8F8D-44A5-958A-BF1C538808D3_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/07B85C87-DD05-4A88-A55C-E705A186B730_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/0C129C90-1A6A-441C-9DAA-3400352F3DC3_4_5005_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/0D6326CF-DE12-45AF-AAB7-2992A6A6066B_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/10D22DA4-24EC-4CF4-B651-7CDA119F08B9_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/119343FD-5354-4C01-A4E9-C00349D3F9A8_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/161321E2-DF07-4CB9-9884-143658C2D7FD_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/161FAF31-6508-4207-89C0-2341FE560325_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/1B717177-D3A3-4374-A913-36CF4FDDDF3E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/21584579-3923-4596-AC1E-A51241CF78E7_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/25DD8F57-7023-4430-BD8F-CE07B7E2BD32_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/2757D558-8336-400C-8341-390527C26DDE_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/28C3736F-E3BC-4551-AD97-AF6C7ADD2AE1_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/2C1BED1B-A8E6-4E7B-AE78-E582BB9BC6F4_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/30582CC6-AFDF-40AE-98E3-46956F6605B4_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/332E028E-1580-4180-BCFB-6510DA234DB4_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/338B6767-E381-4E7F-94DB-48FB4C2E4C7A.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/36013E7E-F4AA-4874-A758-81A83D3076EE_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/3BB36124-26A7-4F29-A1FA-D34ACA85712A_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/3D318F33-D9FB-4A91-8C72-0F73E998D30E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/406C1B62-C9FA-48A4-85ED-FB426C037FE8_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/4413EBFE-A3CF-41CC-9FC0-1F1AC75C149E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/45D23D0E-DF55-4810-AA19-B2524472660D_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/4FD8FD5A-59BB-4246-9C2D-1239EA440782_4_5005_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/53697F2E-B709-4B69-868A-FBCFF825F56F_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/567654CC-42B3-4FC9-99E4-78E36CDF6CBC_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/578F5DEE-77BD-42AB-B954-A2CEFF6EEA16_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/58C190F5-5633-4E5D-9BA7-3DAFC4849D1E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/595D6B0D-875B-4702-A014-9690A530DC53_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/5E140648-8ECE-4B3F-AEC7-A0FC6B985A7B_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/6072C9B2-DA61-4591-B969-242A98D76429_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/61E06970-B1DF-450B-8B82-8E4CDDB1A073_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/635B48C0-9DD8-4375-976D-4AAC9380C24E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/68AD4764-D60F-4192-A880-BF7F74880B37_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/6B03CFE6-D838-4241-9123-1F3C96106254_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/6C78D2F1-DA1C-4392-8973-7CA3B1ECCD70_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/70EA3F18-3EEA-4CE7-8AAE-F12512C8484B_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/71744334-2194-4011-AD69-56FBC484A1DD_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/7205D087-51AD-4E6B-99A6-D721561418FF_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/74C4D0F3-E76E-4012-9A7F-7693F0C9FCF0_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/754E650A-EEE9-4548-BEA0-71D2BD5BB14D_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/75BA6810-B33A-45D5-B3B7-77892AC1EB9E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/76B8C770-0C5C-4461-B591-87F69E086991_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/80074FA1-8A0F-4DB1-8794-9CE96A960F1F_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/8C96989F-0FE0-4F35-988A-7C625B35BE3D_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/8E60A65E-10E7-4A35-B464-848820ED529F_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/905571FD-8C20-4E05-BF84-D230590A38C2_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/90F8AE3C-E2B6-4D69-A0DA-45AE8E4E9FBD_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/92B1FCF1-895E-43E6-9BEE-B73D25314018_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/939F9AFB-9B3E-4157-AABB-5062A126C4D9_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/9440AE57-CD51-474C-B1F8-FD31668AC516_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/950AA2B5-DAE0-496A-92E4-1C6B006E72F9_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/952A71DE-B072-46F6-A005-0E21A5327CAC_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/9BE46F48-5AFD-4E25-A890-D46F4D766870_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/9D568A89-83A9-4EE4-9BFA-501A183B11B4_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/9F27DA00-E991-47EA-AB1E-0F7AB5D6B357_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/A0AF9C51-E512-42C4-AAC4-055A2AA05287_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/A1ACD457-2C91-481A-AA43-9EEEACA872C3_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/A2D582E5-8AD3-48DE-A9C0-6CE081908C21_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/A69DA554-EB00-4259-BA11-0747F89F1B7C_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/A7D819FA-7A16-4EA8-BA07-F23ABD62BEDF_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/A91FE1F1-D8F5-4BBA-8B69-50920E2F4420_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/A91FE1F1-D8F5-4BBA-8B69-50920E2F4420_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/AA953CFC-73A4-4604-9A0C-170FC67AD2B6_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/AD3E77EF-12B2-4455-8293-35B7628F4278_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/ADC0DED4-04C4-4C2B-8871-7460082E8F0B_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/B1DD8EDE-C2A3-46CD-B2EB-9F6AFCAAD99F_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/B41AD0D0-604E-4CF7-9D18-B0883EB06601_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/B4457988-90FE-4B46-9CCC-CDA2D28A5AF4_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/BACD915D-791E-45AE-9F3B-5293CD37931F_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/BD001FB5-5994-428D-B53F-DECB5C826D62_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/C10A8F4A-42FC-48CE-8100-A5AB78F63A6C_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/C15E156F-2F0F-46A1-9250-2D8DAC2F07D7_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/C1658EBC-BE58-4A70-8234-D28B7831E5B8_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/C1CAF967-4D9A-4176-B641-515DA272BC01_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/C27C1335-1AE7-4E9B-B0FD-B9D8AB8403AE_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/C298AB82-C468-4A3E-86E0-8F272EFC0D68_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/C63F4480-3771-4DFA-95F9-4B6D09764EDD_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/C95727D0-5B3F-4CD5-8F87-4CD9D82043E9_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/CAD63317-B0B5-4CAB-8423-9B1A5B7EF7D3_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/CE7A66A3-E003-4F3A-AEFB-3E59DE796D71_4_5005_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/D0380B52-1948-4EA8-90FF-66F4CCBBC8DF_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/D0535488-C90B-4F1E-83E6-21EC9CB9627B_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/D1691996-CE9B-4071-9EA4-E4BC69691FE4_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/D178BB48-C85D-4E60-B053-DECC6B475850_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/D2A27F40-911E-43BE-A2AC-6F591E9045D4_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/D60CCF24-89A6-4EC4-854B-6C90087C7FE0_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/DF58C651-15C9-4D81-93B4-8EE86E6ACF8E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/E0E3918F-0FE5-4AC6-8DC4-957FAC80FE7E_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/E4537274-C506-48CD-984A-DA7A88597C24_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/EA304604-DF82-4D0C-8A27-09D535B8E033_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/EFFC1B25-0AE3-4C1B-974C-F2A53724F755_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/F14AC342-2F53-4F2F-8E93-9E321F968E78_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/F3C0A3F3-0F48-47AA-A71B-2ED61C0AAB3F_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/F41CA23E-49B3-4ADF-A07F-54E8B1BCB6B6_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/FAE7A525-31A5-4C51-AB91-2BB739ED3DD3_1_201_a.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/FDAB953D-BB7F-49B0-80BB-DFE909BFB582_1_105_c.jpeg">
+                <img src="https://ia600906.us.archive.org/14/items/carousel_images_2025/caraousel_images_2025/FF524490-5642-4E19-90B4-AE3D057D9B50_1_105_c.jpeg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image1.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image10.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image100.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image101.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image102.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image103.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image104.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image11.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image12.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image13.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image14.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image15.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image16.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image17.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image18.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image19.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image2.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image20.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image21.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image22.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image23.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image24.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image25.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image26.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image27.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image28.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image29.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image30.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image31.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image32.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image33.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image34.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image35.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image36.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image37.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image38.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image39.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image4.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image40.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image41.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image42.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image43.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image44.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image45.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image47.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image48.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image49.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image5.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image50.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image51.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image53.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image54.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image55.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image56.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image57.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image58.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image59.jpg">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image6.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image60.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image61.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image62.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image63.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image64.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image65.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image66.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image67.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image68.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image69.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image7.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image70.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image71.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image72.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image73.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image74.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image75.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image76.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image77.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image78.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image79.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image8.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image80.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image81.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image82.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image83.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image84.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image86.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image87.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image88.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image89.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image9.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image90.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image92.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image93.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image94.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image95.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image96.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image97.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image98.JPG">
+              <img src="https://ia600408.us.archive.org/10/items/caraousel_images/caraousel_images/image99.JPG">
+            </div>
+            <div class="carousel-controls">
+              <button class="prev-button">Previous</button>
+              <button class="next-button">Next</button>
+            </div>
+          </div> -->
+          <p>
+            I am currently a Master's student (2024-26) at <a href="https://www.alliance.edu.in/">Alliance University</a>
+             and a summer Machine Learning Research Intern (2024) at <a href="https://i2cs.iiitkottayam.ac.in/">i2CS Research Group, IIITK</a>, India. 
+
+             My research focus belongs to Machine Learning, Computer Vision, Natural Language Processing, and Generative Models, with applications to Medical Imaging and Clinical Decision Support. 
+             I enjoyed working with Dr <a href="https://iiitkottayam.ac.in/#!/faculty/kala/">Kala S</a> (internship supervisor) under whom I carried out supervised research work focusing on the 
+             multi-modal alignment of Vision Language Models for Plant Disease Detection using Deep Learning. 
+             
+             Some of my previous work and projects also determine my interest in Deep Learning for Computer Vision and Explainable AI. 
+             Currently, at Alliance University, I am studying Deep Learning, Classical ML, ML Techniques for Image Processing, and Data Science 
+             taught by Prof. <a href="https://www.alliance.edu.in/faculty/prof-mihir-dash">Mihir Dash</a>, 
+             Dr. <a href="https://www.alliance.edu.in/faculty/dr-vivek-mishra">Vivek Mishra</a> 
+             and Dr. <a href="https://www.alliance.edu.in/faculty/dr-raj-dash">Raj Dash</a> . 
+             
+             Conversely, 
+             I am also conducting research in the field of generative AI for healthcare applications supervised by Prof <a href="https://scholar.google.com/citations?user=SLrCSx0AAAAJ&hl=en">Jeba Shiney</a>, 
+             as a part of my master's thesis. 
+             
+             Moreover, 
+             I am a part of the <a href="http://alliance.edu.in/dosss/web/data-drishti-the-data-science-club.php">Data Drishti (the data science club)</a> at Alliance University as well. 
+             I finished my BSc in Mathematics and Statistics (Bachelor's 2021-2024) degree from <a href="https://bangaloreuniversity.karnataka.gov.in/">Bangalore University, Bangalore</a> 
+             in the silicon valley of India. 
+             
+             I belong to the south part of India, from a city called Bangalore which lies in southeast Karnataka.
+            <!-- <a href="https://www.au.dk/en/sanyam.jain@dent.au.dk">I am currently a PhD student</a> in Generative AI at Department of Dentistry and Oral Health (<a href="https://dent.au.dk/">IOOS</a>, <a href="https://digit.au.dk/research-projects/synthetic-dental-radiography-using-generative-artificial-intelligence">Project Page</a>) Aarhus University (<a href="https://www.au.dk/">au.dk</a>) 2024 to current with <a href="https://www.au.dk/en/ruben.pauwels@dent.au.dk">Prof. Ruben Pauwels</a>, <a href="https://www.tuni.fi/en/people/alexandros-iosifidis">Alexandros Iosifidis</a>, and <a href="https://www.au.dk/en/brunanf@aias.au.dk">Bruna Neves de Freitas</a>. I was also a summer intern at <a href="https://www.ntnu.no/gjovik">NTNU Norway</a> between May and June 2024 in Education Technology lab for Computer Vision and Large Visiom Models. I was previously a Master's student (2022-24) at <a href="https://www.hiof.no/">Østfold University College</a> and a summer Intern (2023) at <a href="https://www.oslomet.no/en/about/employee/stenic/">OsloMet University</a>, Norway. My research focus belonged to ALife, Evolution, Complexity and Artificial General Intelligence. I enjoyed working with Prof <a href="https://www.nichele.eu/">Stefano Nichele</a> (also supervisor) where we together studied complexity and emergent behaviour in discrete Cellular Automata, continuous CA (Lenia) and Neural CA. Some of my previous work and projects also determine my interest in Deep Learning for Computer Vision and Explainable AI. I finished my Junior Research Fellowship (and did not continue PhD) at Indian Institute of Technology (IIT) Jodhpur (2020-2022) where I studied Deep Learning, Classical ML, and Dependable AI taught by Dr. <a href="http://home.iitj.ac.in/~mvatsa/">Mayank Vatsa</a> and Dr. <a href="http://home.iitj.ac.in/~richa/">Richa Singh</a>. Conversely, I was also part of <a href="https://vanets-iitj.github.io/pages/people.html">VANETs lab</a> supervised by Prof <a href="https://research.iitj.ac.in/researcher/debasis-das-2">Debasis Das</a>, where my focus was to provide Machine Learning edge for the team. Moreover, I was part of <a href="https://iitj.ac.in/qic/">QIC group</a> at the IIT as well. I finished my early Computer Science Engineering (Bachelor's 2015-2019) degree from <a href="https://www.upes.ac.in/">UPES, Dehradun</a> at the foothills of Himalayas. Most of my guidance during bachelor's for which I am thankful, always to Dr <a href="https://www.ravitomar.in/">Ravi Tomar</a>. I belong to the central part of India, from a town called <a href="https://www.tourism.rajasthan.gov.in/banswara.html">Banswara</a> which lies in south Rajasthan. -->
+          </p>
+        </div>
+        <h4>
+        <a href="docs\about\CV_Public.pdf" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135800.png" width="30px" alt="CV" style="vertical-align: middle;" />
+        </a>
+        &nbsp;
+        <a href="https://www.linkedin.com/in/adarshn-256455279/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png" width="30px" alt="LinkedIn" style="vertical-align: middle;" />
+        </a>
+        &nbsp;
+        <!-- <a href="https://x.com/s4nyam" target="_blank">
+          <img src="https://freepnglogo.com/images/all_img/1691832581twitter-x-icon-png.png" width="30px" alt="Twitter" style="vertical-align: middle;" />
+        </a>
+        &nbsp; -->
+        <a href="https://github.com/adarsh-crafts/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30px" alt="Github" style="vertical-align: middle;" />
+        </a>
+        &nbsp;
+        <!-- <a href="https://discordapp.com/users/s4nyam" target="_blank">
+          <img src="https://brandlogos.net/wp-content/uploads/2021/11/discord-logo.png" width="50px" alt="Discord" style="vertical-align: middle;" />
+        </a> -->
+        <!-- <a href="https://www.instagram.com/denmarkiduniya/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" width="30px" alt="Instagram" style="vertical-align: middle;" />
+        </a> -->
+        
+      </h4>
+
+
+
+        <h4>Water Your Repo, Grow Your Greens!</h4>
+        <img src="https://ghchart.rshah.org/adarsh-crafts" alt="Adarsh's Github chart" width="100%" />
+        
+      </div>
+      
+      <div id="publications" class="tab-content">
+        <div id="publications-gallery" class="gallery-container">
+          <h2>Recent Publications / Preprints (Check <a href="https://scholar.google.com/citations?user=Sm8_hWgAAAAJ&hl=en" target="_blank">Google Scholar</a> for more)</h2>
+          
+          <br/>
+          <div class="publications-container">
+            <div class="publication-box">
+              <div class="gallery-grid">
+                <!-- Publication 1 -->
+                 <div class="gallery-item">
+                  <img src="images\publications\publication1.png" alt="Hand signs Image" class="gallery-image"/>
+                  <p class="gallery-title">
+                    <span style="color: #e74c3c; font-weight: bold; margin-right: 8px; animation: blinker 1s linear infinite;">
+                      <!-- <img src="https://png.pngtree.com/png-vector/20220527/ourlarge/pngtree-new-red-tag-label-badge-png-image_4756845.png" alt="New" width="35" style="vertical-align: middle;"/> -->
+                    </span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11108641" target="_blank">End-to-End Sign Language Translation</a> Developed an end-to-end sign language to English translation system, published in IEEE.</p>
+                  <style>
+                  @keyframes blinker {
+                    50% { opacity: 0; }
+                  }
+                  </style>
+                </div>
+                <!-- Publication 2
+                <div class="gallery-item">
+                  <img src="https://dl3.pushbulletusercontent.com/W3hvGsG2PchZNSRE0zlmXl160ivUlpiQ/Screenshot%202025-06-14%20at%205.52.31%E2%80%AFPM.png" alt="PanoGAN Image" class="gallery-image"/>
+                  <p class="gallery-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11856485/">PanoGAN</a> A Deep Generative Model for Panoramic Dental Radiographs</p>
+                </div> -->
+    
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="publications-gallery" class="gallery-container">
+          <h2>Recent Blogs (Check <a href="https://medium.com/@adarsh-ai" target="_blank">Medium</a> for more)</h2>
+          
+          <br/>
+          <div class="publications-container">
+            <div class="publication-box">
+              <div class="gallery-grid">
+                <!-- blog 1 -->
+                 <div class="gallery-item">
+                  <img src="images\projects\attention.png" alt="Hand signs Image" class="gallery-image"/>
+                  <p class="gallery-title">
+                    <span style="color: #e74c3c; font-weight: bold; margin-right: 8px; animation: blinker 1s linear infinite;">
+                      <!-- <img src="https://png.pngtree.com/png-vector/20220527/ourlarge/pngtree-new-red-tag-label-badge-png-image_4756845.png" alt="New" width="35" style="vertical-align: middle;"/> -->
+                    </span>
+                    <a href="https://medium.com/@adarsh-ai/a-beginners-guide-to-multi-head-self-attention-in-llms-1a4ea8be6fb2" target="_blank">A Beginner’s Guide to Multi-Head Self-Attention in LLMs</a>: Explored the inner workings of multi-head self-attention in transformer-based language models, providing a detailed breakdown of Query, Key, and Value (QKV) computations, attention score calculations, and their role in contextual representation. Analyzed Grouped-Query Attention (GQA) and discussed efficiency and scaling considerations in large language models. Accompanied by hands-on PyTorch implementations, this work demonstrates a comprehensive understanding of attention mechanisms and their optimization in modern LLMs.</p>
+                  <style>
+                  @keyframes blinker {
+                    50% { opacity: 0; }
+                  }
+                  </style>
+                </div>
+                
+                <!-- Publication 2 -->
+                <div class="gallery-item">
+                  <img src="images\publications\BPE.png" alt="BPE Image" class="gallery-image"/>
+                  <p class="gallery-title"><a href="https://medium.com/@adarsh-ai/build-a-byte-pair-encoding-bpe-tokenizer-from-scratch-in-python-0dc32c6410f7">Byte Pair Encoding (BPE) Tokenizer Implementation in Python</a>: Developed a custom BPE tokenizer in Python to understand the foundational tokenization process in large language models. The implementation begins with raw text, constructs an initial character-level vocabulary, and iteratively merges the most frequent byte pairs to form subword units. This approach mirrors the tokenization strategies employed in models like LLaMA and GPT. The project provides insights into the mechanics of vocabulary construction and its impact on model performance.</p>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project-box">
+            <img src="" alt="">
+            <p>
+              <span class="project-title">Built-from-Scratch Personalized Conversational AI (Ongoing)</span><br>
+              <span class="project-description">Developing a modular conversational AI framework from scratch to emulate individual communication styles using personal chat logs. 
+                The project includes end-to-end data preprocessing pipelines (extraction, cleaning, and custom BPE tokenization) 
+                and a reimplementation of a LLaMA-style decoder-only Transformer. Incorporating QLoRA fine-tuning, 
+                it demonstrates parameter-efficient adaptation and personalization in low-resource settings. </span><br>
+              <a href="https://github.com/adarsh-crafts/personalized-conversational-ai" target="_blank" class="project-link">GitHub</a>
+              <br/><br/>
+              <!-- <img src="./nmilogo.png" alt="Logo" class="logo"> Add this line -->
+            </p>
+          </div>
+          
+         
+        </div>
+
+
+
+        <div class="projects-container">
+          <div class="project-box">
+            <img src=".\images\projects\attention2.png" alt="lenia image">
+            <p>
+              <span class="project-title">LLaMA-style Transformer Reimplementation in PyTorch</span><br>
+              <span class="project-description">Built a LLaMA-inspired large language model entirely from scratch in PyTorch, 
+                implementing all core transformer components from first principles. Designed and analyzed multi-head attention, 
+                grouped-query attention (GQA), and rotary positional embeddings (RoPE) to understand their role in token representation 
+                and sequence modeling. This hands-on reimplementation provides an in-depth exploration of modern LLM architectures 
+                and attention mechanisms.</span><br>
+              <a href="https://github.com/adarsh-crafts/llama-llm-from-scratch" target="_blank" class="project-link">GitHub</a>
+              <a href="https://medium.com/@adarsh-ai/list/understanding-large-language-models-llms-41af55633be9"  target="_blank" class="project-link">Medium Blog</a>
+              <!-- <img src=".\images\projects\attention.png" alt="Logo" class="logo"> Add this line -->
+            </p>
+          </div>
+        </div>
+
+
+
+        <div class="projects-container">
+          <div class="project-box">
+            <img src="images\projects\student_performance.svg" alt="Results image">
+            <p>
+              <span class="project-title">Predicting Student Success Using Machine Learning</span><br>
+              <span class="project-description">Developed a machine learning pipeline to forecast student academic performance using the UCI Student Performance dataset. 
+                Implemented data preprocessing, feature engineering, and multiple models including Linear Regression, Decision Trees, 
+                and Random Forests, and analyzed feature importance to identify key factors influencing student outcomes.</span><br>
+              <a href="https://github.com/adarsh-crafts/Predicting-Student-Performance-with-Machine-Learning" target="_blank" class="project-link">GitHub</a>
+              <a href="https://medium.com/@adarsh-ai/predicting-student-success-data-science-and-machine-learning-insights-c669f162e817"  target="_blank" class="project-link">Medium Blog</a>
+            </p>
+          </div>
+          
+         
+        </div>
+      </div>
+      
+
+      <div id="experience" class="tab-content">
+        <h2>Academic and Research Experience</h2>
+        <p>
+          Here, you can find information about my research experience.
+        </p>
+        <!-- Add your experience details here -->
+
+      <div class="experience-item">
+        <div class="experience-title">Student Researcher</div>
+        <div class="experience-duration">August 2025 - Present</div>
+        <div class="experience-description">
+          - Studying and Analyzing Generative Models for AI Assisted Healthcare
+        </div>
+      </div>
+
+
+      <div class="experience-item">
+        <div class="experience-title">Summer Machine Learning Research Intern - i2CS Research Group, IIIT Kottayam</div>
+        <div class="experience-duration">May 2025 - Sept 2025</div>
+        <div class="experience-description">
+          (Paper to be submitted for publication)
+            <br/>
+          - Fine-tuned a CLIP ViT-Large + InternLM2 LLM pipeline for plant disease diagnosis
+            <br/>
+          - Trained a custom visual projector to bridge vision and language domains
+            <br/>
+          - Applied 8-bit quantization and gradient accumulation for efficient training
+            <br/>
+          - Generated accurate, descriptive textual diagnoses from leaf images
+                  </div>
+                </div>
+
+      </div>
+
+
+
+
+
+
+      <div id="education" class="tab-content">
+        <h2>Education</h2>
+
+  <div class="education-section">
+    <h3>Alliance University, Bangalore, India</h3>
+    <p>Degree: Masters in Science</p>
+    <p>Major: Data Science</p>
+    <p>Year: 2024-current</p>
+    <p class="read-more"> Currently maintaining 8.2/10 GPA - Studying Data Science, Machine Learning, and Deep Learning with ML Techniques for Image Processing as specialisation. Projects for the courses Deep Learning and ML Techniques in Image Processing include "An End-to-End Sign Language Translation Pipeline from Static Gestures to English" and Currently working on "AI-assisted skin cancer detection and classification research" which can be found in publications section as part of preprint.</p>
+    <a href="#" class="toggle-read-more">Click for more!</a>
+  </div>
+
+  <div class="education-section">
+    <h3>St. Joseph's College, Bangalore University, Bangalore, India</h3>
+    <p>Degree: Bsc (Bachelor's in Science)</p>
+    <p>Major: Mathematics & Statistics</p>
+    <p>Year: 2021 - 2024</p>
+    <!-- <p class="read-more">Grade: 6.50</p>
+    <a href="#" class="toggle-read-more">Click for more!</a> -->
+  </div>
+  <!-- Add more education sections as needed -->
+
+      </div>
+      
+
+      <div id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <p>
+          You can reach me via email at <a href="mailto:adarshpritam.ml@gmail.com">adarshpritam.ml@gmail.com</a>. Connect with me on social media through the following profiles:
+        </p>
+        <!-- Add your contact details here -->
+        <div class="contact-links">
+          <a class="contact-link" href="https://github.com/adarsh-crafts/">GitHub</a>
+          <!-- <a class="contact-link" href="https://twitter.com/s4nyam">Twitter</a> -->
+          <a class="contact-link" href="https://www.linkedin.com/in/adarshn-256455279/">LinkedIn</a>
+          <a class="contact-link" href="https://medium.com/@adarsh-ai">Medium</a>
+          <!-- <a class="contact-link" href="https://www.instagram.com/sanyam.no/">Instagram</a> -->
+        </div>
+      </div>
+      
+
+
+
+
+      
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 My Personal Webpage. All rights reserved.</p>
+  </footer>
+  
+  <!-- Publication Popup -->
+  <div id="publicationPopup" class="popup">
+    <h2 class="popup-title" id="popupTitle"></h2>
+    <p class="popup-authors" id="popupAuthors"></p>
+    <div class="popup-content">
+      <p class="popup-abstract" id="popupAbstract"></p>
+    </div>
+    <span class="popup-close" onclick="closePublicationPopup()">X</span>
+  </div>
+  <div id="publicationOverlay" class="popup-overlay"></div>
+</body>
+</html>
