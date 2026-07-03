@@ -127,3 +127,50 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+
+/* ==========================
+   News Section
+   ========================== */
+
+.news-box {
+    max-height: 205px;          /* ~5 items */
+    overflow-y: scroll;
+    padding-right: 10px;        /* keeps text away from scrollbar */
+}
+
+.news-box ul {
+    margin: 8px 0 0 0;
+    padding-left: 22px;
+}
+
+.news-box li {
+    margin-bottom: 10px;
+    line-height: 1.45;
+}
+
+/* Always-visible scrollbar */
+
+.news-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.news-box::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+
+.news-box::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+    border-radius: 4px;
+}
+
+.news-box::-webkit-scrollbar-thumb:hover {
+    background: #9c9c9c;
+}
+
+/* Firefox */
+
+.news-box {
+    scrollbar-width: auto;
+    scrollbar-color: #bdbdbd #f4f4f4;
+}
