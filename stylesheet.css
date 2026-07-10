@@ -137,6 +137,9 @@ span.highlight {
     max-height: 205px;          /* ~5 items */
     overflow-y: scroll;
     padding-right: 10px;        /* keeps text away from scrollbar */
+/*    background: #f7f7f7;      /* light grey */
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
 }
 
 .news-box ul {
